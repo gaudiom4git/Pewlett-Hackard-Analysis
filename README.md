@@ -5,7 +5,7 @@ The objective of this project was to analyze future staffing changes in the comp
 
 To do this, students will use the Postgres open source database to store organizational data such as employee, department, salary and title information.  This data will be imported into new tables in the Employee database.  An ERD will help students to understand how each table relates to each other.  SQL statements to JOIN, FILTER, GROUP BY and ORDER BY clauses help to pull this information into new tables that can later be exported into .csv files.
 
-Click here to see the ERD diagram of the PH_Employee database.  [EmployeeDB ERD](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/EmployeeDB.png).
+Click here to see the ERD diagram of the PH_Employee database.  [EmployeeDB ERD](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png).
 ## Results
 
 ## Deliverable 1
@@ -17,7 +17,7 @@ Click here to see the ERD diagram of the PH_Employee database.  [EmployeeDB ERD]
 *  You had to join 3 tables (employee, dept_emp, and titles) using an INNER JOIN to get the current employees and their most recent title that could be part of the mentorship program.  First criteria is that you had to be born the year 1965.  This can be found in the employees table.
 *  Second table to INNER JOIN was the dept_emp table which has a to_date to determine if you were still with the company (to_date='9999-01-01') and the third table to INNER JOIN was the titles table where you woudl get the most recent title of the employee.  Title table can have multiple records for the same employee as they can have different titles over time due to promotions or demotions.  So, you have to do a DISTINCT ON w/ORDER BY to get the latest title for each employee.
 
-See SQL queries performed to accomplish both deliverables: [SQL Queries]([EmployeeDB ERD](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_Challenge_final.sql)
+See SQL queries performed to accomplish both deliverables: [SQL Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_Challenge_final.sql)
 
 ## Summary
 
@@ -44,6 +44,6 @@ Do an INNER JOIN with:
 
 See below for:
 
-Queries used to do get both data results
-First page of data results after running first query:
-First page of data results after running second query:
+Queries used to do get both data results [Deliverable 3 Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Mod%207%20Deliverable%203%20Queries.sql)
+First page of data results after running first query:  [Dept Largest Retiree Count](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/DeptwithMostRetiress.png)
+First page of data results after running second query: [Mentorship Candidates Salary and Title](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/MentorshipSalaryTitle.png)
