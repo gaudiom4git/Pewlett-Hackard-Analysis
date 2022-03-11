@@ -23,6 +23,8 @@ See SQL queries performed to accomplish both deliverables: [SQL Queries](https:/
 
 As an HR representative, I would also like to know which departments are losing the most people.  So, I would include a query that would list all potential retirees and their current departments.  This is how I would do it:
 
+Queries used to do get both data results [Deliverable 3 Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Mod%207%20Deliverable%203%20Queries.sql)
+
 Do an INNER JOIN with:
 => retirement_info table that has the list of retirees built during MOD 7 lesson with 
 => DEPT_EMP table that will get the department number for the employees in the table above with
@@ -30,7 +32,7 @@ Do an INNER JOIN with:
 => Use the GROUP BY and COUNT aggregation to get totals by Department AND
 => ORDER BY to show the largest COUNT first.
 
-This tells me that d005 Development would be losing the most people at 11,627 people.  See screenshot.
+This tells me that d005 Development would be losing the most people at 11,627 people.  See First page of data results after running first query:  [Dept Largest Retiree Count](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/DeptwithMostRetiress.png).
 
 
 Another question I might have is what is the current salary and title for the that are not retiring by department.  Perhaps, they could be promoted when employees retire.  Here is how I would do that:
@@ -42,8 +44,6 @@ Do an INNER JOIN with:
 => Use WHERE Clause with title.to_date = '999-01-01' to get current title. 
 => ORDER BY to emp_no.
 
-See below for:
+See screenshot for first page of results: [Mentorship Candidates Salary and Title](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/MentorshipSalaryTitle.png)
 
-Queries used to do get both data results [Deliverable 3 Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Mod%207%20Deliverable%203%20Queries.sql)
-First page of data results after running first query:  [Dept Largest Retiree Count](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/DeptwithMostRetiress.png)
-First page of data results after running second query: [Mentorship Candidates Salary and Title](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/MentorshipSalaryTitle.png)
+
