@@ -21,7 +21,7 @@ See SQL queries performed to accomplish both deliverables: [SQL Queries](https:/
 
 ## Summary
 
-As an HR representative, I would also like to know which departments are losing the most people.  So, I would include a query that would list all potential retirees and their current departments.  I would also like a list of potential employees that might be interested in filling those spots as retiress retire.
+As an HR representative, I would also like to know which departments are losing the most people.  So, I would include a query that would list all potential retirees and their current departments.  I would also like a list of potential employees that might be interested in filling those spots as retirees retire.
 
 Queries used to do get both data results [Deliverable 3 Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Mod%207%20Deliverable%203%20Queries.sql)
 

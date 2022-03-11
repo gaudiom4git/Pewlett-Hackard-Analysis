@@ -8,12 +8,16 @@ To do this, students will use the Postgres open source database to store organiz
 Click here to see the ERD diagram of the PH_Employee database.  [EmployeeDB ERD](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png).
 ## Results
 
-## Deliverable 1
+To help the HR representative with getting a list of potential retirees and employees eligible for the mentorship program, you would have to build a series of queries that join multiple tables, filter, aggregration functions with groupings, distinct function and sort order to pull the data necessary for this analysis.
+
+## Deliverable 1 - Getting the Number of Retiring Employees by Title
+
 * You had to identify potential retiring employees and their most recent titles using an INNER JOIN, WHERE and ORDER BY CLAUSES.  You would perform additional queries to get the unique titles of these retiring employees by performing more INNER JOINS, with DISTINCT ON, and ORDER BY, GROUP BY clauses to get current retiring employee most recent titles.
 
 *  DISTINCT ON with ORDER BY (desc) is a great way to bring back the most recent title for any employee.  Then, the aggregation function, COUNT(DISTINCT TITLE) can give you the number of unique titles.  You can then get proof that you have the correct count by doing a group by title and count(*) to see how many titles there are for retiring employees and how many employees for each title.
 
-## Deliverable 2
+## Deliverable 2 - Employees Eligible for the Mentoship Program
+
 *  You had to join 3 tables (employee, dept_emp, and titles) using an INNER JOIN to get the current employees and their most recent title that could be part of the mentorship program.  First criteria is that you had to be born the year 1965.  This can be found in the employees table.
 *  Second table to INNER JOIN was the dept_emp table which has a to_date to determine if you were still with the company (to_date='9999-01-01') and the third table to INNER JOIN was the titles table where you woudl get the most recent title of the employee.  Title table can have multiple records for the same employee as they can have different titles over time due to promotions or demotions.  So, you have to do a DISTINCT ON w/ORDER BY to get the latest title for each employee.
 
