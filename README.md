@@ -26,27 +26,25 @@ See SQL queries performed to accomplish both deliverables: [SQL Queries](https:/
 
 ## Summary
 
-As an HR representative, I would also like to know which departments are losing the most people.  So, I would include a query that would list all potential retirees and their current departments.  I would also like a list of potential employees that might be interested in filling those spots as retirees retire.
-
-Queries used to do get both data results [Deliverable 3 Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Mod%207%20Deliverable%203%20Queries.sql)
+As an HR representative, I would also like to know which departments are losing the most people.  So, I would include a query that would list all potential retirees and their current departments.  
 
 Do an INNER JOIN with:
-(1) Use retirement_info table that has the list of retirees built during MOD 7 lesson with DEPT_EMP table that will get the department number for the employees in the table above with
-(2) DEPARMENT TABLE to get the department name AND
-(3) Use the GROUP BY and COUNT aggregation to get totals by Department AND
-(4) ORDER BY to show the largest COUNT first.
+* Use retirement_info table that has the list of retirees built during MOD 7 lesson with DEPT_EMP table that will get the department number for the employees in the table above with
+* DEPARMENT TABLE to get the department name AND
+* Use the GROUP BY and COUNT aggregation to get totals by Department AND
+* ORDER BY to show the largest COUNT first.
 
 This tells me that d005 Development would be losing the most people at 11,627 people.  See First page of data results after running first query:  [Dept Largest Retiree Count](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/DeptwithMostRetiress.png).
 
 Another question I might have is what is the current salary and title for the that are not retiring by department.  Perhaps, they could be promoted when employees retire.  Here is how I would do that:
 
 Do an INNER JOIN with:
-(1) mentorship_eligibility table that has the list of current employees born in 1965. (Deliverable 2) 
-(2) AND TITLES to get the current title for the employee 
-(3) AND SALARIES to get the current salary for the employee
-(4) Use WHERE Clause with title.to_date = '999-01-01' to get current title. 
-(5) ORDER BY to emp_no.
+* mentorship_eligibility table that has the list of current employees born in 1965. (Deliverable 2) 
+* AND TITLES to get the current title for the employee 
+* AND SALARIES to get the current salary for the employee
+* Use WHERE Clause with title.to_date = '999-01-01' to get current title. 
+* ORDER BY to emp_no.
 
 See screenshot for first page of results: [Mentorship Candidates Salary and Title](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/MentorshipSalaryTitle.png)
 
-
+Queries used to do get both data results [Deliverable 3 Queries](https://github.com/gaudiom4git/Pewlett-Hackard-Analysis/blob/main/Queries/Mod%207%20Deliverable%203%20Queries.sql)
